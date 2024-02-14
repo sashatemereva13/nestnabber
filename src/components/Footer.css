@@ -1,0 +1,69 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #4f87d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 0 0;
+}
+.footerFirstRow {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.footerSecondRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footerLink {
+  color: #ffe076;
+  transition: 0.5s;
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+}
+p.footerLink {
+  width: 10ch;
+  text-align: center;
+}
+.footerLink:hover {
+  color: #f0f7ff;
+}
+.footerLink div {
+  display: inline-block;
+}
+.needAHand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.needAHand p {
+  margin: 0;
+  color: #ffe076;
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 690px) {
+  .footer p,
+  .footer a {
+    font-size: 0.8rem;
+  }
+  .footerFirstRow {
+    gap: 0.5rem;
+  }
+  .footerLink div {
+    display: block;
+  }
+}

@@ -1,0 +1,65 @@
+@import url("./fonts/poppins/css/poppins.css");
+
+/* GENERAL*/
+body {
+  margin: 0;
+}
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: "Poppins-Regular";
+  transition: 0.5s;
+  background-color: #ffdb57;
+  color: #8b7328;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: #0d75b9;
+  color: #ffdb57;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Poppins-Medium";
+  color: #0d75b9;
+}
+p {
+  font-family: "Poppins-Regular";
+  max-width: 65ch;
+  color: #094f7d;
+}
+a {
+  text-decoration: none;
+}
+
+ol li {
+  font-family: "Poppins-Regular";
+  color: #094f7d;
+}
+
+.fullPage {
+  text-align: center;
+  max-width: 100vw;
+}
+.link {
+  color: #8b7328;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #4f89d3;
+  text-decoration: underline #f9cd48;
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 0.8rem;
+  }
+}

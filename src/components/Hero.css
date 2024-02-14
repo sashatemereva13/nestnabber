@@ -1,0 +1,51 @@
+.hero {
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heroImg {
+  /* filter: grayscale(100%) contrast(300%);
+  opacity: 0.9; */
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.yellowLayer {
+  background-color: #fcce00c2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.heroText {
+  position: absolute;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  bottom: 10%;
+  background-color: #4d7fbf;
+  color: white;
+  font-family: "Poppins-Semibold";
+  font-size: 4rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 670px) {
+  .hero {
+    height: 200px;
+  }
+  .heroText {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heroText {
+    font-size: 2rem;
+  }
+}

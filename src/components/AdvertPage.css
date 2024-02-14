@@ -1,0 +1,32 @@
+.advertBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.advertImgDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.advertDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advertContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffdb57;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+.advertContact img {
+  width: 3rem;
+}

@@ -1,0 +1,56 @@
+.yellowDivider {
+  width: 100vw;
+  height: 5px;
+  background-color: #ffdb57;
+  margin: 0 0 3rem 0;
+}
+
+.editAccountDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.registerForm {
+  margin: 2rem 0;
+}
+.registerForm label {
+  font-family: "Poppins-Thin";
+  width: 100px;
+}
+.registerForm input {
+  padding: 1rem;
+}
+.formRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.7rem 0;
+}
+
+.formRow label {
+  font-family: "Poppins-Regular";
+  max-width: 65ch;
+  color: #094f7d;
+}
+
+.profilePictureDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profilePictureDiv img {
+  width: 5rem;
+}
+.profilePictureDiv label {
+  font-family: "Poppins-Regular";
+  color: #094f7d;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.profilePictureDiv label:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,32 @@
+.searchResultsDiv {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.searchResult {
+  border: 2px solid #ffe076;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  transition: 0.5s;
+}
+.searchResult:hover {
+  transform: scale(1.05);
+}
+.searchPage .heroTextSearch {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  top: 50%;
+  background-color: #4d7fbf;
+  color: rgb(222, 211, 12);
+  font-family: "Poppins-Semibold";
+  font-size: 3rem;
+  z-index: 2;
+}

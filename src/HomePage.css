@@ -1,0 +1,124 @@
+/* HERO */
+.yourNextHomeOneClickAway .heroText {
+  bottom: 30%;
+  font-size: 3.5rem;
+  padding: 0 2rem;
+}
+.yourNextHomeOneClickAway .heroText2 {
+  position: absolute;
+  padding: 0 2rem;
+  border-radius: 4px;
+  bottom: 0;
+  background-color: #4d7fbf;
+  color: white;
+  font-family: "Poppins-Semibold";
+  font-size: 3.5rem;
+  z-index: 2;
+}
+/* SEARCH */
+.searchBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.searchBarDiv {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.searchBarDiv label {
+  font-family: "Poppins-Thin";
+}
+.searchBarDiv fieldset {
+  border-color: #094f7d;
+}
+
+.searchBarContainer .css-sghohy-MuiButtonBase-root-MuiButton-root {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: "Poppins-Regular";
+  transition: 0.5s;
+  background-color: #ffdb57;
+  color: #8b7328;
+  font-size: 1rem;
+  box-shadow: none;
+}
+.searchBarContainer .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #0d75b9;
+  color: #ffdb57;
+  cursor: pointer;
+}
+
+/* ADVERT */
+.advertContainer {
+  padding: 4rem 0;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.advertContainer:hover {
+  transform: scale(1.1);
+  background-color: #fff3ce;
+}
+.advertText {
+  max-width: 10ch;
+  font-family: "Poppins-regular";
+  font-size: 2rem;
+  color: #8b7328;
+}
+
+.advertImg {
+  width: 9rem;
+}
+
+/* ABOUT US */
+.aboutUsContainer {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutUsContainer h2 {
+  background-color: #f1be00;
+  color: white;
+  font-size: 3rem;
+  padding: 0 2rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+.aboutUsContainer p {
+  background-color: #f1be00;
+  color: white;
+  border-radius: 4px;
+  display: inline;
+  padding: 5px;
+}
+@media screen and (max-width: 700px) {
+  .aboutUsContainer {
+    padding: 4rem;
+  }
+  .yourNextHomeOneClickAway .heroText,
+  .yourNextHomeOneClickAway .heroText2 {
+    font-size: 2rem;
+  }
+  .aboutUsContainer h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .advertText {
+    font-size: 1.5rem;
+  }
+  .advertImg {
+    width: 5rem;
+  }
+}
