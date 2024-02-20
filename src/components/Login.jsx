@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Hero from "./Hero";
 import Navigation from "./Navigation";
 import "./Login.css";
@@ -45,10 +46,15 @@ const Login = () => {
               required
             />
           </div>
+          <Link to="/passwordreset" className="forgotPasswordLink">
+            <p className="link">Forgot your password?</p>
+          </Link>
+          <div className="formRow">
+            <button type="submit" onClick={handleSubmit}>
+              Submit
+            </button>
+          </div>
         </form>
-        <div className="formRow">
-          <button type="submit">Submit</button>
-        </div>
       </div>
       <Footer />
     </div>

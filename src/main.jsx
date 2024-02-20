@@ -14,6 +14,7 @@ import SearchPage from "./components/SearchPage.jsx";
 import TermsOfService from "./components/TermsOfService.jsx";
 import ManageAdverts from "./components/ManageAdverts.jsx";
 import EditAccount from "./components/EditAccount.jsx";
+import PasswordReset from "./components/PasswordReset.jsx";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -31,6 +32,7 @@ root.render(
         <Route path="/termsofservice" element={<TermsOfService />} />
         <Route path="/manageadverts" element={<ManageAdverts />} />
         <Route path="/editaccount" element={<EditAccount />} />
+        <Route path="/passwordreset" element={<PasswordReset />} />
       </Routes>
     </Router>
   </React.StrictMode>

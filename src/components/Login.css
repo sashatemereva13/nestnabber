@@ -26,3 +26,7 @@
   max-width: 65ch;
   color: #094f7d;
 }
+.forgotPasswordLink {
+  text-align: center;
+  font-size: 0.9rem;
+}
