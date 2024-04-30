@@ -15,6 +15,7 @@ import TermsOfService from "./components/TermsOfService.jsx";
 import ManageAdverts from "./components/ManageAdverts.jsx";
 import EditAccount from "./components/EditAccount.jsx";
 import PasswordReset from "./components/PasswordReset.jsx";
+import PasswordReset2 from "./components/PasswordReset2.jsx";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -33,6 +34,7 @@ root.render(
         <Route path="/manageadverts" element={<ManageAdverts />} />
         <Route path="/editaccount" element={<EditAccount />} />
         <Route path="/passwordreset" element={<PasswordReset />} />
+        <Route path="/passwordreset2" element={<PasswordReset2 />} />
       </Routes>
     </Router>
   </React.StrictMode>

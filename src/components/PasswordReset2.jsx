@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Hero from "./Hero";
 import "./PasswordReset.css";
 
-const PasswordReset = () => {
-  const [email, setEmail] = useState("");
-  const handleEmail = (event) => {
+const PasswordReset2 = () => {
+  const [password, setPassword] = useState("");
+  const handlePassword = (event) => {
     setEmail(event.target.value);
   };
-  const handleSubmit = (event) => {};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
   return (
     <div>
       <Navigation />
@@ -17,18 +18,16 @@ const PasswordReset = () => {
       <div className="passwordResetDiv">
         <form className="passwordResetForm">
           <div className="formRow">
-            <label htmlFor="email"> Your email:</label>
+            <label htmlFor="password"> New password:</label>
             <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={handleEmail}
+              id="password"
+              type="password"
+              value={password}
+              onChange={handlePassword}
             />
           </div>
           <div className="formRow">
-            <Link to="/passwordreset2">
-              <button onClick={handleSubmit}>Submit</button>
-            </Link>
+            <button onClick={handleSubmit}>Submit</button>
           </div>
         </form>
       </div>
@@ -36,4 +35,4 @@ const PasswordReset = () => {
   );
 };
 
-export default PasswordReset;
+export default PasswordReset2;

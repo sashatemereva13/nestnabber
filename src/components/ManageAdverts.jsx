@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import axios from "axios";
 import uploadIcon from "../imgs/uploadIcon.svg";
 import "./Advertise.css";
+import "./ManageAdverts.css";
 
 const ManageAdverts = () => {
   const [files, setFiles] = useState([]);
@@ -162,11 +163,14 @@ const ManageAdverts = () => {
             </div>
           </div>
         </form>
-        <button type="submit">Save Changes</button>
-        {uploadedFiles.map((file, index) => (
-          <img key={index} src={file} alt={`Uploaded content ${index}`} />
-        ))}
-        {error && <p className="error-message">Error: {error}</p>}
+        <div className="buttonsRow">
+          <button type="submit">Save Changes</button>
+          {uploadedFiles.map((file, index) => (
+            <img key={index} src={file} alt={`Uploaded content ${index}`} />
+          ))}
+          {error && <p className="error-message">Error: {error}</p>}
+          <button type="submit"> Delete</button>
+        </div>
       </div>
       <Footer />
     </div>
